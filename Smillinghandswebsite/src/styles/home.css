@@ -427,6 +427,7 @@ footer {
   /* section who we are */
   .who_we_are {
     gap: 1rem;
+    height: 60vh;
     padding: 1rem;
   }
   .who_we_are h2 {
@@ -452,7 +453,9 @@ footer {
     object-fit: fill;
   }
   /* aside content  styling */
-
+  .aside_main_container {
+    height: 40vh;
+  }
   .aside_content .aside_text {
     padding: 1rem 1.5rem;
   }
@@ -501,6 +504,7 @@ footer {
   /* Helping hand section  styling  */
   .helping-hand {
     background: url("../assets/placeholder.png");
+    height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -546,6 +550,7 @@ footer {
 /* voluterr styuling  */
 .volunteer_container {
   margin-top: 4rem;
+  height: 45vh;
 }
 .volunteer_content .volunteer_text{
   padding: .5rem;
@@ -572,5 +577,130 @@ footer {
 
 /* responsive design tablet */
 @media (max-width:800px) {
+  /* home content */
+  .home_content h1 {
+    font-size: 2rem;
+  }
+  .home_content .btn_container {
+    margin-top: 0.6rem;
+  }
+  .btn {
+    width: 7rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 0;
+  }
+   /* section who we are */
+   .who_we_are {
+    gap: .5rem;
+    height: 52vh;
+    padding: .5rem;
+  }
+  .who_we_are h2 {
+    font-size: 1.5rem;
+  }
+  .who_we_are_content {
+    width: 95%;
+  }
+  .who_we_are_text {
+    padding: .5rem;
+    gap: .5rem;
+  }
+  .who_we_are_text p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+ /* aside content  styling */
+ .aside_main_container {
+  height: 38vh;
+}
+.aside_content .aside_text {
+  padding: 1rem ;
+}
+.aside_text h2 {
+  font-size: 2rem;
+
+}
+.aside_text .aside_line {
+  margin-top: 1rem;
+}
+.aside_text p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  line-height: 1.3rem;
+}
+ /* mission section styling */
+ .our-mission {
+  margin-top: 3rem;
+  gap: 1rem;
+  padding: .5rem;
+}
+.our-mission h2 {
+  font-size: 1.5rem;
   
+}
+.content-flex {
+  gap: .5rem;
+}
+.content-item {
+  padding: .8rem .5rem;
+  height: auto;
+}
+.content-item h3 {
+  font-size: 1.2rem;
+  height: 3rem;
+}
+
+.content-item p {
+  font-size: 0.8rem;
+  margin-top: .5rem;
+}
+
+ /* Helping hand section  styling  */
+
+.helping-hand_content {
+  width: 50%;
+  padding: .5rem;
+}
+
+.helping-hand_text h2 {
+  font-size: 2rem;
+}
+.helping-hand_text p{
+  font-size: .8rem;
+}
+.btn_helping_donate {
+  margin-top: 1rem;
+}
+ /*initiatives section  styling   */
+ .initiatives_container {
+  margin-top: 2rem;
+
+}
+.initiatives_container h2 {
+  font-size: 1.5rem;
+}
+.initiatives_content {
+  margin-top: .5rem;
+}
+
+.initiatives_text {
+  padding: .5rem;
+}
+.initiatives_text h3{
+  font-size: .85rem;
+}
+ 
+/* voluterr styuling  */
+
+.volunteer_text .volunteer_line{
+  width: 90%;
+}
+.volunteer_line h2 {
+  font-size: 2rem;
+}
+.volunteer_line p {
+  font-size: .8rem;
+  line-height: 1.1rem;
+}
+
 }
