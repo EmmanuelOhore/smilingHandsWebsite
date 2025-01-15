@@ -1,0 +1,120 @@
+.about_container {
+}
+/* about header astylking */
+.about_head_content {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about_head_content h2 {
+  font-size: 2.5rem;
+  color: var(--header-color);
+  font-weight: 500;
+}
+.about_head_content .navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation a,
+.navigation h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: all 350ms ease-in-out;
+}
+.navigation a:hover {
+  color: var(--button-hover);
+}
+
+/* about content section styling  */
+.about_content {
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about_content h2 {
+  font-size: 2.5rem;
+  color: var(--header-color);
+}
+
+/* vision_mission_container */
+.vision_mission_container {
+  justify-content: center;
+  gap: 6rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.container_box {
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  width: 30%;
+}
+.container_box .img_container img {
+  width: 100%;
+}
+.container_box .text_container {
+  padding: 0.5rem 1rem;
+}
+.text_container h2 {
+  font-size: 1.5rem;
+  color: var(--header-color);
+}
+.text_container p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+/* posterimg ztyling */
+.posterimg {
+  background: url("https://via.placeholder.com/700x500");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+
+/*voluteerposter image  */
+.volunteer_postercontainer {
+  margin-top: 6rem;
+  display: flex;
+}
+.volunteer_poster_text_container {
+  flex: 1;
+}
+.volunteer_poster_text_container .volunteer_poster_text {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  height: 90%;
+  margin-left: auto;
+  margin-right: 3rem;
+  padding: 1.5rem;
+  width: 80%;
+}
+.volunteer_poster_text h2 {
+  font-size: 3rem;
+  color: var(--header-color);
+}
+.volunteer_poster_text p {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5rem;
+}
+.volunteer_poster_text .btn {
+  margin-top: 1.4rem;
+}
+.volunteer_postercontainer .volunteer_poster {
+  flex: 1;
+}

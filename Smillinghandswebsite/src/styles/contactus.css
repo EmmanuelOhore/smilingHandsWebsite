@@ -1,0 +1,119 @@
+/* conatct us heading styling */
+.contactus_content {
+  margin-top: 1rem;
+  text-align: center;
+}
+.contactus_content h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--header-color);
+}
+.contactus_content h4 {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/*contact us form */
+.contactus_form_container {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.contactus_form {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.contactus_form .inputBox {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.inputBox label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--header-color);
+}
+.inputBox input,
+textarea {
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--border-color);
+}
+.inputBox input::placeholder {
+  font-weight: 300;
+}
+textarea {
+  height: 5rem;
+}
+.contactus_form .btn {
+  padding: 0.5rem;
+}
+
+/* constact us section poster  */
+.contactus_poster {
+  display: flex;
+  padding: 1rem;
+}
+.contactus_poster_text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.contactus_poster_text_content {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  display: flex;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+}
+.contactus_poster_logo_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contactus_poster_logo_container img {
+  border-radius: 0.5rem;
+  width: 8rem;
+  border: 1px solid var(--border-color);
+}
+.contactus_poster_logo_container h1 {
+  color: var(--header-color);
+  font-size: 2rem;
+}
+.contactus_poster_textp_container {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+.contactus_poster_textp_container p {
+  font-size: 1.1rem;
+}
+.contactus_poster_textp_container p .bold {
+  font-weight: 600;
+  color: black;
+  font-size: 1.2rem;
+}
+.contactus_poster_img_conatiner {
+  flex: 1;
+  display: flex;
+}
+.contactus_poster_img_conatiner img {
+  margin-left: auto;
+  border-radius: 0.5rem;
+  margin-right: 4rem;
+}

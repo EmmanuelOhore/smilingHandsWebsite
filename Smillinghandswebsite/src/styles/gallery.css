@@ -1,0 +1,14 @@
+.gallery_content_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 3rem;
+}
+
+.gallery_img_container {
+  width: 15%;
+  height: 15%;
+}
+.gallery_img_container img {
+  width: 100%;
+}
