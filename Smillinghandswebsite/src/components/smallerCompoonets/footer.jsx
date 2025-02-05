@@ -1,3 +1,5 @@
+import imgone from "../../assets/placeholder.png";
+
 const Footer = () => {
   return (
     <>
@@ -6,10 +8,7 @@ const Footer = () => {
         <div className="footer_content">
           <div className="footer_text_container">
             <div className="footer_logo">
-              <img
-                src="https://via.placeholder.com/100x50"
-                alt="Placeholder Image"
-              />
+              <img src={imgone} alt="Placeholder Image" />
               <h1>LOGO</h1>
             </div>
             <div className="footer_text">

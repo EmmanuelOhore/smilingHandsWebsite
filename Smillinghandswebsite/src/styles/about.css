@@ -73,7 +73,7 @@
 
 /* posterimg ztyling */
 .posterimg {
-  background: url("https://via.placeholder.com/700x500");
+  background: url("../assets/placeholder.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,17 +86,18 @@
 /*voluteerposter image  */
 .volunteer_postercontainer {
   margin-top: 6rem;
+  padding: 1rem;
   display: flex;
 }
 .volunteer_poster_text_container {
-  flex: 1;
+  width: 48%;
 }
 .volunteer_poster_text_container .volunteer_poster_text {
   border: 1px solid var(--border-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   border-radius: 0.5rem;
   background-color: var(--background);
-  height: 90%;
+
   margin-left: auto;
   margin-right: 3rem;
   padding: 1.5rem;
@@ -116,5 +117,9 @@
   margin-top: 1.4rem;
 }
 .volunteer_postercontainer .volunteer_poster {
-  flex: 1;
+  width: 45%;
+}
+.volunteer_postercontainer .volunteer_poster img {
+  width: 100%;
+  height: 100%;
 }

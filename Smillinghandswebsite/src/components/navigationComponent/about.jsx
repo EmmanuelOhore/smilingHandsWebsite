@@ -1,4 +1,6 @@
 import Footer from "../smallerCompoonets/footer";
+import imgone from "../../assets/placeholder.png";
+import imgtwo from "../../assets/place.png";
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import "../../styles/about.css";
 const About = () => {
@@ -14,10 +16,7 @@ const About = () => {
             {/* vision container */}
             <div className="vision_container container_box">
               <div className="img_container ">
-                <img
-                  src="https://via.placeholder.com/500x400"
-                  alt="Placeholder Image"
-                />
+                <img src={imgone} alt="Placeholder Image" />
               </div>
               <div className="text_container">
                 <h2>Our Vision</h2>
@@ -30,10 +29,7 @@ const About = () => {
             {/* mission conainter */}
             <div className="mission_container container_box">
               <div className="img_container">
-                <img
-                  src="https://via.placeholder.com/500x400"
-                  alt="Placeholder Image"
-                />
+                <img src={imgone} alt="Placeholder Image" />
               </div>
               <div className="text_container">
                 <h2>Our Mission</h2>
@@ -64,10 +60,7 @@ const About = () => {
             </div>
           </div>
           <div className="volunteer_poster">
-            <img
-              src="https://via.placeholder.com/500x400"
-              alt="Placeholder Image"
-            />
+            <img src={imgtwo} alt="Placeholder Image" />
           </div>
         </section>
         <footer>

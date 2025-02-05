@@ -37,10 +37,7 @@ const Home = () => {
             <button className="btn btn_learn-more">Learn More</button>
           </div>
           <div className="who_we_are_img">
-            <img
-            src={imgone}
-              alt="Placeholder Image"
-            />
+            <img src={imgone} alt="Placeholder Image" />
           </div>
         </div>
       </section>
@@ -64,7 +61,7 @@ const Home = () => {
             </div>
           </div>
           <div className="aside_img">
-            <img src={imgtwo} alt="placehilder"/>
+            <img src={imgtwo} alt="placehilder" />
           </div>
         </div>
       </section>
@@ -134,22 +131,13 @@ const Home = () => {
       <section className="initiatives_container">
         <h2>Initiatives</h2>
         <div className="initiatives_content">
-          <InitiativeBox
-            img={imgone}
-            header={"The Helping Hands Initiative"}
-          />
-          <InitiativeBox
-            img={imgone}
-            header={"The Smile of a Hundred"}
-          />
+          <InitiativeBox img={imgone} header={"The Helping Hands Initiative"} />
+          <InitiativeBox img={imgone} header={"The Smile of a Hundred"} />
           <InitiativeBox
             img={imgone}
             header={"Empowerment Through Education"}
           />
-          <InitiativeBox
-            img={imgone}
-            header={"Medical Outreach/Awareness"}
-          />
+          <InitiativeBox img={imgone} header={"Medical Outreach/Awareness"} />
         </div>
       </section>
 
