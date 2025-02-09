@@ -1,4 +1,6 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
+import imgone from "../../assets/placeholder.png";
+
 import Footer from "../smallerCompoonets/footer";
 import "../../styles/volunteer.css";
 const Volunteer = () => {
@@ -74,7 +76,7 @@ const Volunteer = () => {
             <div className="vounteer_founfation_img">
               <img
                 className="volunteer_img"
-                src="https://via.placeholder.com/600x800"
+                src={imgone}
                 alt="Placeholder Image"
               />
             </div>
@@ -114,7 +116,7 @@ const Volunteer = () => {
             <div className="join_volunteer_img">
               <img
                 className="join_volunteer_img"
-                src="https://via.placeholder.com/500x400"
+                src={imgone}
                 alt="Placeholder Image"
               />
             </div>

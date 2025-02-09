@@ -28,11 +28,11 @@ nav {
 .logo_container {
   gap: 0.5rem;
 }
-.img-container{
+.img-container {
   width: 100px;
   height: 50px;
 }
-.img-container img{
+.img-container img {
   width: 100%;
   height: 100%;
 }
@@ -113,7 +113,7 @@ nav {
   }
   /*  nav_links styling */
   .nav_links li p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   /* nav butto styling */
@@ -137,18 +137,47 @@ nav {
   }
   .fa-solid {
     color: var(--text-color);
-    font-size: 1.6
-    
-    
-    
-    
-    rem;
+    font-size: 1.6rem;
     position: absolute;
     right: 2rem;
   }
-/* nav_links_conatiner styling */
-.nav_links_conatiner,.nav_button{
-  outline: 1px solid red;
-  display: none;
+  /* nav_links_conatiner styling */
+  .nav_links_conatiner,
+  .nav_button {
+    outline: 1px solid red;
+    display: none;
+  }
 }
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0.5rem;
+  }
+  .fa-solid {
+    font-size: 1.4rem;
+    top: 1.6rem;
+  }
+  .img-container {
+    width: 80px;
+    height: 40px;
+  }
+  .logo_container h1 {
+    font-size: 1.4rem;
+  }
+  .logo_container img {
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .img-container {
+    width: 60px;
+    height: 30px;
+  }
+  .logo_container h1 {
+    font-size: 1.2rem;
+  }
+  .fa-solid {
+    font-size: 1.2rem;
+    top: 1.8rem;
+  }
 }
