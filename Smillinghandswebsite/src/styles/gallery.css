@@ -1,13 +1,13 @@
 .gallery_content_container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 2rem 3rem;
+  padding: 1rem;
 }
 
 .gallery_img_container {
-  width: 15%;
-  height: 15%;
+  width: 30%;
 }
 .gallery_img_container img {
   width: 100%;

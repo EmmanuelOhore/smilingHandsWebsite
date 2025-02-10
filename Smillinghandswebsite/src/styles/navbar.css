@@ -135,7 +135,7 @@ nav {
   nav {
     position: relative;
   }
-  .fa-solid {
+  .bars {
     color: var(--text-color);
     font-size: 1.6rem;
     position: absolute;

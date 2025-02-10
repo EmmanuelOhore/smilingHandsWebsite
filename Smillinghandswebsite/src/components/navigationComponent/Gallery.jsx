@@ -1,5 +1,6 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import Footer from "../smallerCompoonets/footer";
+import imgone from "../../assets/placeholder.png";
 import "../../styles/gallery.css";
 const Gallery = () => {
   const imgArray = Array.from({ length: 10 }, (_, i) => i + 1);
@@ -11,10 +12,7 @@ const Gallery = () => {
           {imgArray.map((el, index) => {
             return (
               <div key={index} className="gallery_img_container">
-                <img
-                  src={`https://via.placeholder.com/500x400`}
-                  alt="Placeholder Image"
-                />
+                <img src={imgone} alt="Placeholder Image" />
               </div>
             );
           })}{" "}

@@ -5,13 +5,8 @@ const NavBar = () => {
   return (
     <nav>
       <section className="logo_container">
-        <div
-          className="img-container"
-        >
-          <img
-            src={imgone}
-            alt="Placeholder Image"
-          />
+        <div className="img-container">
+          <img src={imgone} alt="Placeholder Image" />
         </div>
         <h1>LOGO</h1>
       </section>
@@ -58,7 +53,7 @@ const NavBar = () => {
         </div>
       </section>
       {/* hamburger meanu */}
-      <i className="fa-solid fa-bars"></i>
+      <i className="fa-solid fa-bars bars"></i>
     </nav>
   );
 };
