@@ -48,8 +48,27 @@ const NavBar = () => {
         </header>
       </Link>
 
+    <nav className="realtive z-40">
+      <Link to="/">
+        <header className="logo_container">
+          <div className="img-container">
+            <img src={imgone} alt="Placeholder Image" />
+          </div>
+          <h1>LOGO</h1>
+        </header>
+      </Link>
+
       <section className="nav_links_conatiner">
         <ul className="nav_links">
+          {navData.map((data, index) => {
+            return (
+              <div key={index} className=" w-[20%] flex items-center gap-3">
+                <li className=" text-[15px] leading-[27px] font-medium  laptop:text-[14px] tablet:text-[12px] phoneL:text-[13px] phoneP:text-[12px]">
+                  <NavLink to={`${data.linkto}`}>{data.name}</NavLink>
+                </li>
+              </div>
+            );
+          })}
           {navData.map((data, index) => {
             return (
               <div key={index} className=" w-[20%] flex items-center gap-3">
