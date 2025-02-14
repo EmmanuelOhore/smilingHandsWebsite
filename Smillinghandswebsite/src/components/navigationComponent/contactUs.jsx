@@ -1,12 +1,13 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import Footer from "../smallerCompoonets/footer";
 import "../../styles/contactus.css";
+import imgone from "../../assets/placeholder.png";
 
 const ContactUs = () => {
   return (
     <>
       <div className="contactus_conatner">
-        <NavigationHeader title={"Contac tUs"} navName={"Contact Us"} />
+        <NavigationHeader title={"Contact Us"} navName={"Contact Us"} />
         {/* coatct us header */}
         <section className="contactus_content">
           <h2>Let’s start a conversation</h2>
@@ -63,19 +64,13 @@ const ContactUs = () => {
         {/* constact us section poster  */}
         <section className="contactus_poster">
           <div className="contactus_poster_img_conatiner">
-            <img
-              src="https://via.placeholder.com/500x400"
-              alt="Placeholder Image"
-            />
+            <img src={imgone} alt="Placeholder Image" />
           </div>
 
           <div className="contactus_poster_text">
             <div className="contactus_poster_text_content">
               <div className="contactus_poster_logo_container">
-                <img
-                  src="https://via.placeholder.com/100x50"
-                  alt="Placeholder Image"
-                />
+                <img src={imgone} alt="Placeholder Image" />
                 <h1>LOGO</h1>
               </div>
               <div className="contactus_poster_textp_container">

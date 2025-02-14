@@ -1,9 +1,17 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import Footer from "../smallerCompoonets/footer";
 import imgone from "../../assets/placeholder.png";
+import Aos from "aos";
+import { useEffect } from "react";
 import "../../styles/gallery.css";
+
 const Gallery = () => {
-  const imgArray = Array.from({ length: 10 }, (_, i) => i + 1);
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+  const imgArray = Array.from({ length: 9 }, (_, i) => i + 1);
   return (
     <>
       <div className="gallery_container">
@@ -11,8 +19,17 @@ const Gallery = () => {
         <section className="gallery_content_container">
           {imgArray.map((el, index) => {
             return (
-              <div key={index} className="gallery_img_container">
-                <img src={imgone} alt="Placeholder Image" />
+              <div
+                data-aos="fade-down"
+                key={index}
+                className="gallery_img_container"
+              >
+                <img
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  src={imgone}
+                  alt="Placeholder Image"
+                />
               </div>
             );
           })}{" "}

@@ -3,7 +3,14 @@ import imgone from "../../assets/placeholder.png";
 import imgtwo from "../../assets/place.png";
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import "../../styles/about.css";
+import Aos from "aos";
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div className="about_container">
@@ -16,7 +23,7 @@ const About = () => {
             {/* vision container */}
             <div className="vision_container container_box">
               <div className="img_container ">
-                <img src={imgone} alt="Placeholder Image" />
+                <img data-aos="zoom-in" src={imgone} alt="Placeholder Image" />
               </div>
               <div className="text_container">
                 <h2>Our Vision</h2>
@@ -29,7 +36,7 @@ const About = () => {
             {/* mission conainter */}
             <div className="mission_container container_box">
               <div className="img_container">
-                <img src={imgone} alt="Placeholder Image" />
+                <img data-aos="zoom-in" src={imgone} alt="Placeholder Image" />
               </div>
               <div className="text_container">
                 <h2>Our Mission</h2>
@@ -50,17 +57,19 @@ const About = () => {
         <section className="volunteer_postercontainer">
           <div className="volunteer_poster_text_container">
             <div className="volunteer_poster_text">
-              <h2>Take the First step Today</h2>
-              <p>
+              <h2 data-aos="fade-up">Take the First step Today</h2>
+              <p data-aos="fade-down">
                 Joining PUSH Foundation can also be a great way to meet
                 like-minded individuals who share your passion for serving
                 others and making the world a better place.
               </p>
-              <button className="btn btn_volunteer">Volunteer</button>
+              <button data-aos="fade-right" className="btn btn_volunteer">
+                Volunteer
+              </button>
             </div>
           </div>
           <div className="volunteer_poster">
-            <img src={imgtwo} alt="Placeholder Image" />
+            <img data-aos="zoom-in" src={imgtwo} alt="Placeholder Image" />
           </div>
         </section>
         <footer>

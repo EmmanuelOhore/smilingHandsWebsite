@@ -1,9 +1,9 @@
 import imgone from "../../assets/placeholder.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
-      {" "}
       <footer>
         <div className="footer_content">
           <div className="footer_text_container">
@@ -33,24 +33,32 @@ const Footer = () => {
             <div className="footer_content_section_Container">
               <div className="footer_content_section">
                 <h3>What We Do</h3>
-                <h3>Intiatives</h3>
+                <Link className=" w-[50%]" to="/Gallery">
+                  <h3 className="!w-full">Gallery</h3>
+                </Link>
               </div>
               <div className="footer_content_section">
                 <h3>Who We Are</h3>
-                <h3>Volunteer</h3>
+                <Link className=" w-[50%]" to="/Volunteer">
+                  <h3 className="!w-full">Volunteer</h3>
+                </Link>
               </div>
               <div className="footer_content_section">
                 <h3>What We Do</h3>
-                <h3>Intiatives</h3>
+                <Link className=" w-[50%]" to="/Intiatives">
+                  <h3 className="!w-full">Intiatives</h3>
+                </Link>
               </div>
               <div className="footer_content_section">
-                <h3>Contacts</h3>
-                <h3>About</h3>
+                <Link className=" w-[50%]" to="/Contactus">
+                  <h3 className="!w-full">Contacts</h3>{" "}
+                </Link>
+
+                <Link className=" w-[50%]" to="/about">
+                  <h3 className="!w-full">About</h3>
+                </Link>
               </div>
-              <div className="footer_content_section">
-                <h3>Push Team</h3>
-                <h3>Gallery</h3>
-              </div>
+              <div className="footer_content_section"></div>
               <button className="btn btn_donate">Donate Now</button>
             </div>
           </div>
