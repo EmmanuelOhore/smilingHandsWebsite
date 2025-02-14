@@ -3,7 +3,7 @@ import Footer from "../smallerCompoonets/footer";
 import imgone from "../../assets/placeholder.png";
 import "../../styles/gallery.css";
 const Gallery = () => {
-  const imgArray = Array.from({ length: 10 }, (_, i) => i + 1);
+  const imgArray = Array.from({ length: 9 }, (_, i) => i + 1);
   return (
     <>
       <div className="gallery_container">
