@@ -3,9 +3,24 @@ import InitiativeBox from "../smallerCompoonets/intitativeBox";
 import imgone from "../../assets/placeholder.png";
 import imgtwo from "../../assets/place.png";
 import Footer from "../smallerCompoonets/footer";
+import ScrolltoTop from "../smallerCompoonets/ScrolltoTop";
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const Home = () => {
+  const whoweareRef = useRef(null);
+  const whatweDoRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#who-we-are" && whoweareRef.current) {
+      whoweareRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (location.hash === "#what-we-do" && whatweDoRef.current) {
+      whatweDoRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -13,16 +28,20 @@ const Home = () => {
   }, []);
   return (
     <div className="home_container">
+      <ScrolltoTop />
       {/* section home content */}
       <section className="home_content">
         <h1>We Are Touching Lives in Africa</h1>
         <div className="btn_container">
           <button className="btn btn_join-us">Join us</button>
-          <button className="btn btn_donate">Donate Now</button>
+          <Link to="/donate">
+            {" "}
+            <button className="btn btn_donate">Donate Now</button>{" "}
+          </Link>
         </div>
       </section>
       {/* section who we are  */}
-      <section className="who_we_are">
+      <section ref={whoweareRef} id="who-we-are" className="who_we_are">
         <h2>Who We Are</h2>
         <div className="who_we_are_content">
           <div className="who_we_are_text">
@@ -76,7 +95,7 @@ const Home = () => {
       </section>
 
       {/* mission section  */}
-      <section className="our-mission">
+      <section className="our-mission" ref={whatweDoRef} id="what-we-do">
         <h2 data-aos="fade-up">WHAT WE DO</h2>
         <div className="content-flex">
           <div data-aos="fade-right" className="content-item">
@@ -144,9 +163,11 @@ const Home = () => {
               bring a big change
             </p>
           </div>
-          <button data-aos="fade-down" className="btn btn_helping_donate">
-            Donate Now
-          </button>
+          <Link to="/donate">
+            <button data-aos="fade-down" className="btn btn_helping_donate">
+              Donate Now
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -201,6 +222,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <Footer />
     </div>
   );

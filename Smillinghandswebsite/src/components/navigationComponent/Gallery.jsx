@@ -1,5 +1,6 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import Footer from "../smallerCompoonets/footer";
+import ScrolltoTop from "../smallerCompoonets/ScrolltoTop";
 import imgone from "../../assets/placeholder.png";
 import Aos from "aos";
 import { useEffect } from "react";
@@ -15,6 +16,7 @@ const Gallery = () => {
   return (
     <>
       <div className="gallery_container">
+        <ScrolltoTop />
         <NavigationHeader title={"Gallery"} navName={"Initiatives"} />
         <section className="gallery_content_container">
           {imgArray.map((el, index) => {

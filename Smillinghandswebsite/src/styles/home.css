@@ -1,11 +1,11 @@
 :root {
   --background: #f9f9f9; /* Light, clean background */
-  --primary-color: #007bff; /* Trustworthy blue */
+  --primary-color: #f1b7ff; /* Trustworthy blue */
   --header-color: #343a40; /* Dark, readable text */
   --border-color: #dee2e6; /* Subtle, professional border */
   --text-color: #495057; /* Muted icon color */
-  --button-color: #0056b3; /* Primary button */
-  --button-hover: #004085; /* Darker shade for button hover */
+  --button-color: #2a152f; /* Primary button */
+  --button-hover: #2a152f; /* Darker shade for button hover */
   --white: #ffffff;
 }
 
@@ -200,7 +200,7 @@
 .helping-hand_content {
   margin-left: auto;
   border: 1px solid var(--white);
-  background-color: rgb(0, 86, 179, 0.6);
+  background-color: #2a152f;
   border-radius: 0.5rem;
   margin-right: 7rem;
   padding: 1.5rem;

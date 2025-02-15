@@ -1,12 +1,21 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
+import ScrolltoTop from "../smallerCompoonets/ScrolltoTop";
 import Footer from "../smallerCompoonets/footer";
+import Aos from "aos";
 import "../../styles/contactus.css";
 import imgone from "../../assets/placeholder.png";
+import { useEffect } from "react";
 
 const ContactUs = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div className="contactus_conatner">
+        <ScrolltoTop />
         <NavigationHeader title={"Contact Us"} navName={"Contact Us"} />
         {/* coatct us header */}
         <section className="contactus_content">
@@ -64,7 +73,7 @@ const ContactUs = () => {
         {/* constact us section poster  */}
         <section className="contactus_poster">
           <div className="contactus_poster_img_conatiner">
-            <img src={imgone} alt="Placeholder Image" />
+            <img data-aos="zoom-in" src={imgone} alt="Placeholder Image" />
           </div>
 
           <div className="contactus_poster_text">
@@ -74,10 +83,10 @@ const ContactUs = () => {
                 <h1>LOGO</h1>
               </div>
               <div className="contactus_poster_textp_container">
-                <p>
+                <p data-aos="fade-down">
                   <span className="bold">Phone: </span>+2348135877412{" "}
                 </p>
-                <p>
+                <p data-aos="fade-up">
                   <span className="bold">Email: </span>
                   foundationofgodsheritage@gmail.com{" "}
                 </p>

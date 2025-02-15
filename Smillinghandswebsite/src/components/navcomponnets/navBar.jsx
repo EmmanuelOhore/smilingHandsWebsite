@@ -1,5 +1,6 @@
 import "../../styles/navBar.css";
 import imgone from "../../assets/placeholder.png";
+import { navData } from "../../constant";
 import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 
@@ -21,33 +22,8 @@ const NavBar = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [isOpen]);
-  const navData = [
-    { linkto: "/about", name: "About", icon: "fa-solid fa-user-group" },
-    {
-      linkto: "/Volunteer",
-      name: "Volunteer",
-      icon: "fa-solid fa-hand-holding-dollar",
-    },
-    {
-      linkto: "/Intiatives",
-      name: "Initiatives",
-      icon: "fa-solid fa-briefcase",
-    },
-    { linkto: "/Gallery", name: "Gallery", icon: "fa-solid fa-blog" },
-    { linkto: "/Contactus", name: "Contact ", icon: "fa-solid fa-phone" },
-  ];
 
   return (
-    <nav className="realtive z-40">
-      <Link to="/">
-        <header className="logo_container">
-          <div className="img-container">
-            <img src={imgone} alt="Placeholder Image" />
-          </div>
-          <h1>LOGO</h1>
-        </header>
-      </Link>
-
     <nav className="realtive z-40">
       <Link to="/">
         <header className="logo_container">
@@ -69,19 +45,13 @@ const NavBar = () => {
               </div>
             );
           })}
-          {navData.map((data, index) => {
-            return (
-              <div key={index} className=" w-[20%] flex items-center gap-3">
-                <li className=" text-[15px] leading-[27px] font-medium  laptop:text-[14px] tablet:text-[12px] phoneL:text-[13px] phoneP:text-[12px]">
-                  <NavLink to={`${data.linkto}`}>{data.name}</NavLink>
-                </li>
-              </div>
-            );
-          })}
         </ul>
       </section>
       <section className="nav_button">
-        <button>Donate</button>
+        <Link to="/donate">
+          {" "}
+          <button>Donate</button>
+        </Link>
         <div className="search_container">
           <i className="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search" />

@@ -1,7 +1,37 @@
 import imgone from "../../assets/placeholder.png";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      href: "https://www.instagram.com/god_heritage_foundation/profilecard/?igsh=NGN0ZjB2azB4b2s0",
+      iconClass: "fa-brands fa-instagram",
+      delay: "0",
+    },
+    {
+      href: "https://x.com/_GHF_Foundation",
+      iconClass: "fa-brands fa-x-twitter",
+      delay: "200",
+    },
+    {
+      href: "https://www.facebook.com/share/17qXsTjHaN/?mibextid=LQQJ4d]",
+      iconClass: "fa-brands fa-facebook",
+      delay: "400",
+    },
+    {
+      href: "https://www.instagram.com/god_heritage_foundation/profilecard/?igsh=NGN0ZjB2azB4b2s0",
+      iconClass: "fa-brands fa-youtube",
+      delay: "600",
+    },
+  ];
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <footer>
@@ -12,7 +42,7 @@ const Footer = () => {
               <h1>LOGO</h1>
             </div>
             <div className="footer_text">
-              <p>
+              <p data-aos="fade-up">
                 We are always looking for passionate individuals to join our
                 cause. Whether you have time, skills, or resources to offer, we
                 welcome your support.
@@ -21,24 +51,40 @@ const Footer = () => {
             <div className="footer_links_container">
               <h3>Follow us:</h3>
               <div className="footer_links">
-                <i className="fa-brands fa-x-twitter"></i>
-                <i className="fa-brands fa-facebook"></i>
-                <i className="fa-brands fa-youtube"></i>
-                <i className="fa-brands fa-instagram"></i>
+                {socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      data-aos="fade-right"
+                      data-aos-offset="50"
+                      data-aos-delay={link.delay}
+                      className={link.iconClass}
+                    ></i>
+                  </a>
+                ))}
               </div>
             </div>
+            ;
           </div>
           {/* link s container */}
           <div className="footer_content_links_container">
             <div className="footer_content_section_Container">
               <div className="footer_content_section">
-                <h3>What We Do</h3>
+                <Link to={"/#who-we-are"} className="w-[50%] text-start">
+                  <h3 className="!w-full">Who we Are</h3>
+                </Link>
                 <Link className=" w-[50%]" to="/Gallery">
                   <h3 className="!w-full">Gallery</h3>
                 </Link>
               </div>
               <div className="footer_content_section">
-                <h3>Who We Are</h3>
+                <Link to={"/#what-we-do"} className="w-[50%] text-start">
+                  <h3 className="!w-full">What we DO</h3>
+                </Link>
                 <Link className=" w-[50%]" to="/Volunteer">
                   <h3 className="!w-full">Volunteer</h3>
                 </Link>
@@ -59,7 +105,10 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="footer_content_section"></div>
-              <button className="btn btn_donate">Donate Now</button>
+              <Link to="/donate">
+                {" "}
+                <button className="btn btn_donate">Donate</button>
+              </Link>
             </div>
           </div>
         </div>

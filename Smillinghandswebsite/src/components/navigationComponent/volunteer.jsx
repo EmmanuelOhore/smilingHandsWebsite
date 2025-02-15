@@ -1,5 +1,6 @@
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import imgone from "../../assets/placeholder.png";
+import ScrolltoTop from "../smallerCompoonets/ScrolltoTop";
 import Aos from "aos";
 import Footer from "../smallerCompoonets/footer";
 import "../../styles/volunteer.css";
@@ -57,6 +58,7 @@ const Volunteer = () => {
   return (
     <>
       <div className="volunteerNav_container">
+        <ScrolltoTop />
         <NavigationHeader title={"Volunteer"} navName={"Volunteer"} />
         <section className="volunteer_foundation_section">
           <div className="volunteer_foundation_container">
@@ -106,7 +108,7 @@ const Volunteer = () => {
         {/* due note section */}
         <section className="volunteer_due_note_section">
           <div className="due_note_container">
-            <i className="fa-solid fa-people-group animate-bounce"></i>
+            <i className="fa-solid fa-people-group animate-bounce !text-[#2a152f]"></i>
             <p data-aos="fade-down">
               Note: Due to the current global situation, we prioritize the
               health and safety of our volunteers and the communities we serve.
@@ -131,9 +133,14 @@ const Volunteer = () => {
                   information about the onboarding process. We look forward to
                   welcoming you to our community of passionate volunteers!
                 </p>
-                <button data-aos="fade-right" className="btn btn_volunteer">
-                  Volunteer Now
-                </button>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfFupSlYU2qTdY2a1A28Vjy4eLJkhkHZunyRzY3Gr_Ry41emA/viewform?vc=0&c=0&w=1&flr=0&pli=1"
+                  target="_blank"
+                >
+                  <button data-aos="fade-right" className="btn btn_volunteer">
+                    Volunteer Now
+                  </button>
+                </a>
               </div>
             </div>
             <div className="join_volunteer_img">

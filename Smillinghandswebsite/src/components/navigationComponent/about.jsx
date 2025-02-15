@@ -1,6 +1,7 @@
 import Footer from "../smallerCompoonets/footer";
 import imgone from "../../assets/placeholder.png";
 import imgtwo from "../../assets/place.png";
+import ScrolltoTop from "../smallerCompoonets/ScrolltoTop";
 import NavigationHeader from "../smallerCompoonets/navigationheader";
 import "../../styles/about.css";
 import Aos from "aos";
@@ -14,6 +15,7 @@ const About = () => {
   return (
     <>
       <div className="about_container">
+        <ScrolltoTop />
         <NavigationHeader title={"About us"} navName={"About"} />
 
         {/* about contaunt section */}
@@ -63,9 +65,14 @@ const About = () => {
                 like-minded individuals who share your passion for serving
                 others and making the world a better place.
               </p>
-              <button data-aos="fade-right" className="btn btn_volunteer">
-                Volunteer
-              </button>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfFupSlYU2qTdY2a1A28Vjy4eLJkhkHZunyRzY3Gr_Ry41emA/viewform?vc=0&c=0&w=1&flr=0&pli=1"
+                target="_blank"
+              >
+                <button data-aos="fade-right" className="btn btn_volunteer">
+                  Volunteer Now
+                </button>
+              </a>
             </div>
           </div>
           <div className="volunteer_poster">
