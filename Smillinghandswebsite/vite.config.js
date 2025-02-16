@@ -6,6 +6,9 @@ export default defineConfig({
   base: "/",
   plugins: [react()],
   build: {
-    outDir: "dist", // Ensure Netlify looks for the correct build directory
+    outDir: "dist",
+    rollupOptions: {
+      external: ["@rollup/rollup-linux-x64-gnu"],
+    },
   },
 });
