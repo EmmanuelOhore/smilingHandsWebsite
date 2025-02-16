@@ -6,17 +6,16 @@ export const navData = [
   {
     linkto: "/Volunteer",
     name: "Volunteer",
-    icon: "fa-solid fa-hand-holding-dollar",
+    icon: "fa-solid fa-users-line",
   },
   {
     linkto: "/Intiatives",
     name: "Initiatives",
-    icon: "fa-solid fa-briefcase",
+    icon: "fa-solid fa-handshake",
   },
-  { linkto: "/Gallery", name: "Gallery", icon: "fa-solid fa-blog" },
+  { linkto: "/Gallery", name: "Gallery", icon: "fa-solid fa-image" },
   { linkto: "/Contactus", name: "Contact ", icon: "fa-solid fa-phone" },
 ];
-
 // intitive
 export const intiativeData = [
   {

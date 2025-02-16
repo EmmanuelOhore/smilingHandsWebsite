@@ -75,7 +75,7 @@ const NavBar = () => {
       {isOpen && (
         <div
           ref={menuRef}
-          className="hidden z-10  absolute  translate-x-[-50%] left-[50%] top-[4rem]  w-full  tablet:!block phoneP:top-[3.8rem] bg-white border-b-2 shadow-md"
+          className="hidden z-10  absolute  translate-x-[-50%] left-[50%] top-[4.5rem]  w-full  tablet:!block phoneP:top-[4.5rem] bg-white border-b-2 shadow-md"
         >
           <ul className=" flex flex-col justify-center items-center font-semibold  gap-2 phoneP:gap-0 ">
             {navData.map((data, index) => {
