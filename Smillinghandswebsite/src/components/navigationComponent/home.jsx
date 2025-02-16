@@ -223,9 +223,17 @@ const Home = () => {
                 cause. Whether you have time, skills, or resources to offer, we
                 welcome your support.
               </p>
-              <button className="btn btn_volunteer !bg-[#2a152f] text-white">
-                Volunteer Now
-              </button>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfFupSlYU2qTdY2a1A28Vjy4eLJkhkHZunyRzY3Gr_Ry41emA/viewform?vc=0&c=0&w=1&flr=0&pli=1"
+                target="_blank"
+              >
+                <button
+                  data-aos="fade-right"
+                  className="btn btn_volunteer !bg-[#2a152f] text-white"
+                >
+                  Volunteer Now
+                </button>
+              </a>
             </div>
           </div>
           <div className="volunteer_img">

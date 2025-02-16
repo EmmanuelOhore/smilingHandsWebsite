@@ -7,6 +7,8 @@ import { useEffect, useRef, useState } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false); //state that handls the nav bar drop down
   let menuRef = useRef(null); //ref to the meun bar
+  const buttonRef = useRef(null); // Reference to the hamburger button
+
   // funtion that handles the drop down toggle
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
@@ -14,13 +16,20 @@ const NavBar = () => {
   // effect hook that hsndles the close on click out side the dropdown
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
+      if (
+        isOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
         setIsOpen(false);
       }
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
-  }, []);
+  }, [isOpen]);
+  console.log(isOpen);
   return (
     <nav className="realtive z-40">
       <Link to="/">
@@ -57,8 +66,11 @@ const NavBar = () => {
       </section>
       {/* hamburger meanu */}
       <i
+        ref={buttonRef}
         onClick={handleToggle}
-        className={`fa-solid ${isOpen ? "fa-x " : "fa-bars"} bars`}
+        className={`fa-solid ${
+          isOpen ? "fa-x " : "fa-bars"
+        } bars !text-[#2a152f]`}
       ></i>
       {isOpen && (
         <div

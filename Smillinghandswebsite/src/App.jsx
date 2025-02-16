@@ -12,8 +12,8 @@ import ContactUs from "./components/navigationComponent/contactUs";
 function App() {
   return (
     <>
-      <NavBar />
-      <div className="main_container">
+      <div className="main_container overflow-hidden">
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

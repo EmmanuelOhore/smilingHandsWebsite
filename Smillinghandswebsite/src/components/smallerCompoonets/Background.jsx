@@ -27,12 +27,7 @@ const Background = () => {
     };
   }, [vantaEffect]);
 
-  return (
-    <div
-      ref={vantaRef}
-      className="absolute inset-0 w-full h-fullw-full h-full"
-    />
-  );
+  return <div ref={vantaRef} className="absolute inset-0 w-full h-full " />;
 };
 
 export default Background;
