@@ -19,7 +19,7 @@ const ContactUs = () => {
         <NavigationHeader title={"Contact Us"} navName={"Contact Us"} />
         {/* coatct us header */}
         <section className="contactus_content">
-          <h2>Let’s start a conversation</h2>
+          <h2 className="!text-[#2a152f]">Let’s start a conversation</h2>
           <h4>
             Leave us a message and we’ll get back to you as soon as possible
           </h4>
@@ -66,7 +66,9 @@ const ContactUs = () => {
                 required
               />
             </div>
-            <button className="btn btn_submit">Submit</button>
+            <button className="btn btn_submit !bg-[#2a152f] text-white">
+              Submit
+            </button>
           </form>
         </section>
 
@@ -84,10 +86,11 @@ const ContactUs = () => {
               </div>
               <div className="contactus_poster_textp_container">
                 <p data-aos="fade-down">
-                  <span className="bold">Phone: </span>+2348135877412{" "}
+                  <span className="bold !text-[#2a152f]">Phone: </span>
+                  +2348135877412{" "}
                 </p>
                 <p data-aos="fade-up">
-                  <span className="bold">Email: </span>
+                  <span className="bold !text-[#2a152f]">Email: </span>
                   foundationofgodsheritage@gmail.com{" "}
                 </p>
               </div>

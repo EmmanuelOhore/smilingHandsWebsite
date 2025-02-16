@@ -2,27 +2,25 @@ import "../../styles/navBar.css";
 import imgone from "../../assets/placeholder.png";
 import { navData } from "../../constant";
 import { NavLink, Link } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false); //state that handls the nav bar drop down
+  let menuRef = useRef(null); //ref to the meun bar
+  // funtion that handles the drop down toggle
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
   };
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  };
+  // effect hook that hsndles the close on click out side the dropdown
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
     };
-  }, [isOpen]);
-
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
   return (
     <nav className="realtive z-40">
       <Link to="/">
@@ -64,7 +62,7 @@ const NavBar = () => {
       ></i>
       {isOpen && (
         <div
-          ref={dropdownRef}
+          ref={menuRef}
           className="hidden z-10  absolute  translate-x-[-50%] left-[50%] top-[4rem]  w-full  tablet:!block phoneP:top-[3.8rem] bg-white border-b-2 shadow-md"
         >
           <ul className=" flex flex-col justify-center items-center font-semibold  gap-2 phoneP:gap-0 ">
@@ -72,7 +70,8 @@ const NavBar = () => {
               return (
                 <div
                   key={index}
-                  className=" w-[20%] flex items-center gap-3 phoneL:gap-2"
+                  onClick={handleToggle}
+                  className=" w-[20%]  flex items-center gap-3 phoneL:gap-2"
                 >
                   <i
                     className={` ${data.icon} text-[14px] phoneL:!text-[12px] phoneP:!text-[11px]`}

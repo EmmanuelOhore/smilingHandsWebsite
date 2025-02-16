@@ -5,6 +5,7 @@ import imgtwo from "../../assets/place.png";
 import Footer from "../smallerCompoonets/footer";
 import ScrolltoTop from "../smallerCompoonets/ScrolltoTop";
 import Aos from "aos";
+import Background from "../smallerCompoonets/Background";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -30,19 +31,22 @@ const Home = () => {
     <div className="home_container">
       <ScrolltoTop />
       {/* section home content */}
-      <section className="home_content">
-        <h1>We Are Touching Lives in Africa</h1>
+      <section className="home_content relative">
+        <Background />
+        <h1 className="!text-white">We Are Touching Lives in Africa</h1>
         <div className="btn_container">
-          <button className="btn btn_join-us">Join us</button>
+          <button className="btn btn_join-us text-white  ">Join us</button>
           <Link to="/donate">
             {" "}
-            <button className="btn btn_donate">Donate Now</button>{" "}
+            <button className="btn btn_donate  text-white">
+              Donate Now
+            </button>{" "}
           </Link>
         </div>
       </section>
       {/* section who we are  */}
       <section ref={whoweareRef} id="who-we-are" className="who_we_are">
-        <h2>Who We Are</h2>
+        <h2 className="!text-[#2a152f]">Who We Are</h2>
         <div className="who_we_are_content">
           <div className="who_we_are_text">
             <p>
@@ -60,7 +64,10 @@ const Home = () => {
               united in our mission to make a meaningful difference, ensuring
               that no one is forgotten.
             </p>
-            <button data-aos="fade-up" className="btn btn_learn-more">
+            <button
+              data-aos="fade-up"
+              className="btn btn_learn-more   !bg-[#2a152f] text-white"
+            >
               Learn More
             </button>
           </div>
@@ -96,7 +103,9 @@ const Home = () => {
 
       {/* mission section  */}
       <section className="our-mission" ref={whatweDoRef} id="what-we-do">
-        <h2 data-aos="fade-up">WHAT WE DO</h2>
+        <h2 data-aos="fade-up" className="!text-[#2a152f]">
+          WHAT WE DO
+        </h2>
         <div className="content-flex">
           <div data-aos="fade-right" className="content-item">
             <h3>Community Outreach</h3>
@@ -146,7 +155,10 @@ const Home = () => {
             </p>
           </div> */}
         </div>
-        <button data-aos="fade-down" className="btn btn_READ">
+        <button
+          data-aos="fade-down"
+          className="btn btn_READ  !bg-[#2a152f] text-white"
+        >
           Read More
         </button>
       </section>
@@ -173,7 +185,7 @@ const Home = () => {
 
       {/*initiatives section  */}
       <section className="initiatives_container">
-        <h2>Initiatives</h2>
+        <h2 className="!text-[#2a152f]">Initiatives</h2>
         <div className="initiatives_content">
           <InitiativeBox
             delay={"0"}
@@ -203,13 +215,17 @@ const Home = () => {
         <div className="volunteer_content">
           <div className="volunteer_text">
             <div className="volunteer_line">
-              <h2 data-aos="fade-up">We need you and your help</h2>
+              <h2 data-aos="fade-up" className="!text-[#2a152f]">
+                We need you and your help
+              </h2>
               <p data-aos="fade-down">
                 We are always looking for passionate individuals to join our
                 cause. Whether you have time, skills, or resources to offer, we
                 welcome your support.
               </p>
-              <button className="btn btn_volunteer">Volunteer Now</button>
+              <button className="btn btn_volunteer !bg-[#2a152f] text-white">
+                Volunteer Now
+              </button>
             </div>
           </div>
           <div className="volunteer_img">

@@ -64,7 +64,9 @@ const Volunteer = () => {
           <div className="volunteer_foundation_container">
             <div className="volunteer_foundation_text">
               <div data-aos="fade-down" className="foundation_header_text">
-                <h2>Join Us in Making a Difference!</h2>
+                <h2 className="!text-[#2a152f]">
+                  Join Us in Making a Difference!
+                </h2>
                 <p>
                   At Mishpacha God’s Heritage Foundation, our volunteers are the
                   heart of our mission. By joining our team, you can help uplift
@@ -73,7 +75,7 @@ const Volunteer = () => {
                 </p>
               </div>
               <div className="foundation_text_content">
-                <h2 data-aos="fade-up">
+                <h2 data-aos="fade-up" className="!text-[#2a152f]">
                   Why Volunteer with Mishpacha God’s Heritage Foundation?
                 </h2>
                 <ul className="foundation_reason_container">
@@ -123,7 +125,9 @@ const Volunteer = () => {
           <div className="join_volunteer_content">
             <div className="join_volunteer_text">
               <div className="join_volunteer_line">
-                <h2 data-aos="fade-up">BECOME A VOLUNTEER</h2>
+                <h2 data-aos="fade-up" className="!text-[#2a152f]">
+                  BECOME A VOLUNTEER
+                </h2>
                 <p data-aos="fade-down">
                   To get started, simply complete our online application form,
                   indicating your preferred areas of interest and your
@@ -137,7 +141,10 @@ const Volunteer = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfFupSlYU2qTdY2a1A28Vjy4eLJkhkHZunyRzY3Gr_Ry41emA/viewform?vc=0&c=0&w=1&flr=0&pli=1"
                   target="_blank"
                 >
-                  <button data-aos="fade-right" className="btn btn_volunteer">
+                  <button
+                    data-aos="fade-right"
+                    className="btn btn_volunteer !bg-[#2a152f] text-white"
+                  >
                     Volunteer Now
                   </button>
                 </a>

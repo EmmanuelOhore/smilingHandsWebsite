@@ -20,7 +20,7 @@ const About = () => {
 
         {/* about contaunt section */}
         <section className="about_content">
-          <h2>Who We Are</h2>
+          <h2 className="!text-[#2a152f]">Who We Are</h2>
           <div className="vision_mission_container">
             {/* vision container */}
             <div className="vision_container container_box">
@@ -28,7 +28,7 @@ const About = () => {
                 <img data-aos="zoom-in" src={imgone} alt="Placeholder Image" />
               </div>
               <div className="text_container">
-                <h2>Our Vision</h2>
+                <h2 className="!text-[#2a152f]">Our Vision</h2>
                 <p>
                   Our vision is to change and transform the lives of the less
                   privileged.
@@ -41,7 +41,7 @@ const About = () => {
                 <img data-aos="zoom-in" src={imgone} alt="Placeholder Image" />
               </div>
               <div className="text_container">
-                <h2>Our Mission</h2>
+                <h2 className="!text-[#2a152f]">Our Mission</h2>
                 <p>
                   This is a Christian based foundation which was built by the
                   leading of the Holy Spirit and by people who are bent on
@@ -59,7 +59,9 @@ const About = () => {
         <section className="volunteer_postercontainer">
           <div className="volunteer_poster_text_container">
             <div className="volunteer_poster_text">
-              <h2 data-aos="fade-up">Take the First step Today</h2>
+              <h2 data-aos="fade-up" className="!text-[#2a152f]">
+                Take the First step Today
+              </h2>
               <p data-aos="fade-down">
                 Joining PUSH Foundation can also be a great way to meet
                 like-minded individuals who share your passion for serving
@@ -69,7 +71,10 @@ const About = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfFupSlYU2qTdY2a1A28Vjy4eLJkhkHZunyRzY3Gr_Ry41emA/viewform?vc=0&c=0&w=1&flr=0&pli=1"
                 target="_blank"
               >
-                <button data-aos="fade-right" className="btn btn_volunteer">
+                <button
+                  data-aos="fade-right"
+                  className="btn btn_volunteer !bg-[#2a152f] text-white"
+                >
                   Volunteer Now
                 </button>
               </a>
