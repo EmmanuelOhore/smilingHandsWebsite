@@ -25,6 +25,7 @@ const Home = () => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
+      once: true,
     });
   }, []);
   return (
@@ -81,7 +82,7 @@ const Home = () => {
       <section className="aside_main_container">
         <div className="aside_content">
           <div className="aside_text">
-            <h2 data-aos="fade-up">Lets Keeep Pusing</h2>
+            <h2 data-aos="fade-up">Lets Keep Pushing</h2>
             <div data-aos="fade-down" className="aside_line">
               <p>
                 We are called to touch lives, with the mission of eradicating

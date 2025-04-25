@@ -89,12 +89,7 @@ const Footer = () => {
                   <h3 className="!w-full">Volunteer</h3>
                 </Link>
               </div>
-              <div className="footer_content_section">
-                <h3>What We Do</h3>
-                <Link className=" w-[50%]" to="/Intiatives">
-                  <h3 className="!w-full">Intiatives</h3>
-                </Link>
-              </div>
+
               <div className="footer_content_section">
                 <Link className=" w-[50%]" to="/Contactus">
                   <h3 className="!w-full">Contacts</h3>{" "}

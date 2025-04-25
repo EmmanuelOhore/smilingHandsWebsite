@@ -19,7 +19,7 @@ const Volunteer = () => {
         ": Your involvement directly contributes to meaningful change. By volunteering, you empower individuals and families, helping them overcome challenges and achieve their potential.",
     },
     {
-      title: "Experience Personal Gro",
+      title: "Experience Personal Growth",
       delay: "100",
       explanation:
         "Engaging in volunteer work fosters personal fulfillment and growth. Many of our volunteers report increased happiness, enhanced self-esteem, and a profound sense of purpose as they witness the positive effects of their contributions.",
